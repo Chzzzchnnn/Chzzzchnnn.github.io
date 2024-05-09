@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Website</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif; 
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+            color: #000;
+        }
+        header {
+            background-color: #000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        nav {
+            background-color: #000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 50px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .about {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .about p {
+            font-size: 30px; 
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        footer {
+            background-color:#000000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        footer p {
+            margin: 0;
+            font-size: 25px;
+        }
+       
+        .highlight {
+            font-weight: bold;
+            color: #ff2f2f;
+        }
+        
+        .images {
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .images img {
+            width: 400px;
+            height: auto;
+            margin: 0 10px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        .video {
+            margin-top: 40px;
+            position: relative;
+            width: 80%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .video video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to The Bible</h1>
+    </header>
+    <style>
+        body {
+            background-image: url('bible pic.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+        </style>
+    <nav>
+        <a href="Homepage.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <section id="about">
+        <h2>Explore the Depths of Wisdom</h2>
+        <div class="about">
+            <p>Embark on a journey through the sacred teachings and timeless wisdom found in  <span class="highlight"> the Bible</span>. Delve into its profound insights and discover the <span class="highlight">eternal truths</span> that resonate through the ages.</p>
+            <p>Let the <span class="highlight">powerful narratives</span> and profound lessons inspire and uplift you. Join us in our mission to <span class="highlight">spread light and hope</span> through the pages of this revered scripture.</p>
+        </div>
+    </section>
+    <center>
+    <div class="images">
+        <img src="the bible1.jpg" alt="Image">
+        <img src="the bible2.jpeg" alt="Image">
+        <img src="the bible3.jpg" alt="Image ">
+        <img src="the bible4.jpg" alt="Image ">
+        
+    </center>
+    </div>
+    <br>
+    <br>
+    <div class="video">
+        <video controls>
+            <source src="John 13 _ The Last Supper _ The Bible.mp4" type="video/mp4">
+    </div>
+    <div class="video">
+        <video controls>
+            <source src="John 20 _ Jesus Is Resurrected _ The Bible.mp4" type="video/mp4">
+    </div>  
+
+
+    <footer style="position: relative; left: 0; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+        <p>&copy; 2024 Bible Website. All rights reserved.</p>
+    </footer>
+    <script>
+        function changeHeaderColor() {
+            var header = document.querySelector('header');
+            header.style.backgroundColor ='#0000'; 
+        }
+    </script>
+</body>
+</html>

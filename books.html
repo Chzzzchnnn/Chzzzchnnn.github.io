@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bible Website</title>
+    
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #b91b1b;
+            overflow-x: hidden; 
+        }
+        header {
+            background-color: #000000;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+            margin-bottom: 0px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            font-family: 'Times New Roman', Times, serif;
+        }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        nav {
+            background-color: #000000;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 20px;
+            margin: 0 5px;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #ffffff;
+        }
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        section h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+        .book-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .book {
+            margin: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .book:hover {
+            transform: translateY(-5px);
+        }
+        .book img {
+            max-width: 450px;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+        .book:hover img {
+            transform: scale(1.1);
+        }
+        .book p {
+            padding: 10px;
+            margin: 0;
+            font-size: 16px;
+        }
+        footer {
+            background-color:#000000;
+            padding: 10px 0;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            font-family: 'Times New Roman', Times, serif; 
+        }
+        footer p {
+            margin: 0;
+            font-size: 25px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Bible Website</h1>
+    </header>
+    <nav>
+        <a href="Homepage.html">Homepage</a>
+        <a href="books.html">Books</a>
+        <a href="contacts.html">Contact</a>
+    </nav>
+
+    <style>
+        body {
+            background-image: url('bible pic.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+
+   <center>
+
+    <div class="section-wrapper">
+        <div class="section" id="books">
+            <h2>Books of the Bible</h2>
+            <div class="book-container">
+                <div class="book">
+                    <a href="https://www.bible.com/bible/111/GEN.1.NIV">
+                        <img src="genesis.jpg" alt="Genesis">
+                    </a>
+                    <p>Genesis</p>
+                </div>
+                <div class="book">
+                    <a href="https://www.bible.com/bible/111/EXO.1.NIV">
+                        <img src="exodus.jpg" alt="Exodus">
+                    </a>
+                    <p>Exodus</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="section-wrapper">
+        <div class="section" id="books2">
+            <h2></h2>
+            <div class="book-container">
+                <div class="book">
+                    <a href="https://www.bible.com/bible/111/LEV.1.NIV">
+                        <img src="leviticus.jpg" alt="Leviticus">
+                    </a>
+                    <p>Leviticus</p>
+                </div>
+                <div class="book">
+                    <a href="https://www.bible.com/bible/111/NUM.1.NIV">
+                        <img src="numbers.jpg" alt="Numbers">
+                    </a>
+                    <p>Numbers</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    
+</center>
+<br>
+<br>
+<br>
+<br>
+    <footer style="position: relative; left: 0; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+        <p>&copy; 2024 Bible Website. All rights reserved. Ref: bible.com</p>
+    </footer>
+</body>
+</html>
