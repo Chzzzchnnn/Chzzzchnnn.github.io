@@ -9,21 +9,61 @@
             font-family: 'Times New Roman', Times, serif; 
             margin: 0;
             padding: 0;
-            background-color: #f2f2f2;
+           
+            background-image: url('bible pic.jpg'); 
+            background-size: cover;
+            background-position: center;
             color: #000;
         }
         header {
             background-color: #000;
             color: #fff;
-            padding: 20px 0;
+            padding: 20px;
             text-align: center;
-            margin-bottom: 0px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            font-family: 'Times New Roman', Times, serif; 
+            font-family: 'Times New Roman', Times, serif;
+            position: relative;
         }
         header h1 {
             font-size: 36px;
             margin: 0;
+        }
+        .signup-form {
+            position: absolute;
+            top: 300%;
+            right: 20px;
+            transform: translateY(-50%);
+            background-color: #3d3c3c8c;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+        }
+        .signup-form h2 {
+            margin-top: 0;
+            font-size: 24px;
+            margin-bottom: 0px;
+            color: #f37070;
+        }
+        .signup-form input[type="email"],
+        .signup-form input[type="password"],
+        .signup-form input[type="submit"] {
+            width: 100%;
+            margin-bottom: 15px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .signup-form input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .signup-form input[type="submit"]:hover {
+            background-color: #45a049;
         }
         nav {
             background-color: #000;
@@ -76,12 +116,10 @@
             margin: 0;
             font-size: 25px;
         }
-       
         .highlight {
             font-weight: bold;
             color: #ff2f2f;
         }
-        
         .images {
             display: flex;
             justify-content: center;
@@ -93,6 +131,7 @@
             margin: 0 10px;
             border-radius: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            cursor: pointer;
         }
         .video {
             margin-top: 40px;
@@ -105,23 +144,62 @@
             width: 100%;
             height: auto;
             border-radius: 10px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 2px 4px rgba(240, 239, 239, 0.603);
+        }
+
+        
+        #notifier {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            z-index: 9999;
+            max-width: 80%;
+            text-align: center;
+            font-size: 20px;
+        }
+
+        #notifier p {
+            margin: 0;
+        }
+
+        #notifier button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        #notifier button:hover {
+            background-color: #45a049;
         }
     </style>
 </head>
 <body>
     <header>
         <h1>Welcome to The Bible</h1>
+        <div class="signup-form">
+            <h2>Sign Up</h2>
+            <form action="?php echo htmlspecialchars$_SERVER["PHP_SELF; ?>
+                <input type="email" name="email" placeholder="Enter your email" required><br>
+                <input type="password" name="password" placeholder="Enter your password" required><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
     </header>
-    <style>
-        body {
-            background-image: url('bible pic.jpg');
-            background-size: cover;
-            background-repeat: no-repeat;
-            margin: 0;
-            padding: 0;
-        }
-        </style>
+
     <nav>
         <a href="Homepage.html">Homepage</a>
         <a href="books.html">Books</a>
@@ -131,39 +209,75 @@
     <section id="about">
         <h2>Explore the Depths of Wisdom</h2>
         <div class="about">
-            <p>Embark on a journey through the sacred teachings and timeless wisdom found in  <span class="highlight"> the Bible</span>. Delve into its profound insights and discover the <span class="highlight">eternal truths</span> that resonate through the ages.</p>
+            <p>Embark on a journey through the sacred teachings and timeless wisdom found in <span class="highlight">the Bible</span>. Delve into its profound insights and discover the <span class="highlight">eternal truths</span> that resonate through the ages.</p>
             <p>Let the <span class="highlight">powerful narratives</span> and profound lessons inspire and uplift you. Join us in our mission to <span class="highlight">spread light and hope</span> through the pages of this revered scripture.</p>
         </div>
     </section>
+
     <center>
-    <div class="images">
-        <img src="the bible1.jpg" alt="Image">
-        <img src="the bible2.jpeg" alt="Image">
-        <img src="the bible3.jpg" alt="Image ">
-        <img src="the bible4.jpg" alt="Image ">
-        
+        <div class="images">
+            <img src="the bible1.jpg" alt="Image">
+            <img src="the bible2.jpeg" alt="Image">
+            <img src="the bible3.jpg" alt="Image ">
+            <img src="the bible4.jpg" alt="Image ">
+        </div>
     </center>
-    </div>
     <br>
     <br>
+
     <div class="video">
         <video controls>
             <source src="John 13 _ The Last Supper _ The Bible.mp4" type="video/mp4">
+        </video>
     </div>
     <div class="video">
         <video controls>
             <source src="John 20 _ Jesus Is Resurrected _ The Bible.mp4" type="video/mp4">
-    </div>  
+        </video>
+    </div>
 
-
-    <footer style="position: relative; left: 0; bottom: 0; width: 100%; background-color: #333; color: #fff; padding: 20px 0; text-align: center;">
+    <footer>
         <p>&copy; 2024 Bible Website. All rights reserved.</p>
     </footer>
+
+    
     <script>
-        function changeHeaderColor() {
-            var header = document.querySelector('header');
-            header.style.backgroundColor ='#0000'; 
+        
+        function fetchRandomVerse() {
+          
+
+          
+            const dummyVerses = [
+                "For God so loved the world that he gave his one and only Son, that whoever believes in him shall not perish but have eternal life. - John 3:16",
+                "Trust in the Lord with all your heart and lean not on your own understanding; in all your ways submit to him, and he will make your paths straight. - Proverbs 3:5-6",
+                "I can do all this through him who gives me strength. - Philippians 4:13"
+            ];
+
+            const randomIndex = Math.floor(Math.random() * dummyVerses.length);
+            return dummyVerses[randomIndex];
         }
+
+        
+        function displayNotification(verse) {
+           
+           
+           
+
+            
+            alert("Today's Bible Verse:\n\n" + verse);
+        }
+
+        
+        function scheduleNotification() {
+            
+            setInterval(function() {
+                const randomVerse = fetchRandomVerse();
+                displayNotification(randomVerse);
+            }, 30000); // 30000 milliseconds = 30 seconds
+        }
+
+        
+        window.onload = scheduleNotification;
     </script>
 </body>
 </html>
